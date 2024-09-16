@@ -1,0 +1,19 @@
+<section id="experience" class="container mt-5">
+    <h2>Experience</h2>
+    <ul id="experience-list"></ul>
+</section>
+
+<script>
+    const experiences = [
+        { role: 'Web Developer', company: 'Company A', duration: 'Jan 2020 - Present' },
+        { role: 'Frontend Developer', company: 'Company B', duration: 'Jun 2018 - Dec 2019' }
+    ];
+
+    const experienceList = document.getElementById('experience-list');
+
+    experiences.forEach(exp => {
+        const li = document.createElement('li');
+        li.textContent = `${exp.role} at ${exp.company} (${exp.duration})`;
+        experienceList.appendChild(li);
+    });
+</script>

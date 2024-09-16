@@ -1,0 +1,22 @@
+<section id="education" class="container mt-5">
+    <h2>Education</h2>
+    <ul id="education-list"></ul>
+</section>
+
+<script>
+    const education = [
+        { degree: 'B.Sc. in Computer Science', institution: 'University A', year: '2015 - 2019' },
+        { degree: 'M.Sc. in Computer Science', institution: 'University B', year: '2019 - 2021' }
+];
+const educationList = document.getElementById('education-list');
+
+        async function displayEducation() {
+            education.forEach(edu => {
+                const li = document.createElement('li');
+                li.textContent = `${edu.degree} from ${edu.institution} (${edu.year})`;
+                educationList.appendChild(li);
+            });
+        }
+
+        displayEducation();
+    </script>

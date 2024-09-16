@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+#bio img {
+    max-width: 200px;
+}
+
+.container {
+    margin-top: 50px;
+}

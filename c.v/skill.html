@@ -1,0 +1,20 @@
+
+
+
+<section id="skills" class="container mt-5">
+                
+    <ul id="skills-list"></ul>
+</section>
+
+
+<script>
+    const skills = ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'React'];
+    const skillsList = document.getElementById('skills-list');
+
+    skills.forEach(skill => {
+        const li = document.createElement('li');
+        li.textContent = skill;
+        skillsList.appendChild(li);
+    });
+    
+</script>
